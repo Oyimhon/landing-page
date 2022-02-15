@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Lemon&family=Montserrat:wght@500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Lemon&family=Montserrat:wght@500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -16,15 +16,24 @@ body {
   background-blend-mode: multiply;
   color: #fff;
 }
+
 .form_wrap {
   width: 100%;
   max-width: 800px;
   margin: 100px auto;
   padding: 20px;
-
-  &__header {
-    display: flex;
-    flex-direction: row;
-    align-items: space-between;
-  }
 }
+
+.form_wrap__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+/*# sourceMappingURL=style.css.map */
