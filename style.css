@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Lemon&family=Montserrat:wght@500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  background: url(./images/pexels-pixabay-417173.jpg) 0 0 no-repeat;
+  background-size: cover;
+  background-color: rgba(57, 179, 250, 0.7);
+  background-blend-mode: multiply;
+  color: #fff;
+}
+.form_wrap {
+  width: 100%;
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 20px;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+  }
+}
