@@ -9,55 +9,84 @@
   </head>
   <body>
     <div class="form_wrap">
+      <div class="form_wrap_burger">
+        <button class="burger__button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="burger__content" style="display: none">
+          <ul>
+            <li><a href="#"> TRAVELLER TYPE</a> <span></span></li>
+            <li><a href="#"> COUPLE</a><span></span></li>
+            <li><a href="#"> PROGRAM</a><span></span></li>
+            <li><a href="#"> MOUNTAINING</a><span></span></li>
+            <li><a href="#"> SET LOCATION</a><span></span></li>
+          </ul>
+        </div>
+      </div>
       <header class="form_wrap__header">
-        <div class="form_wrap__header__navbar">
-          <nav>
+        <div class="header__container">
+          <div class="header__logo">
+            <img src="./images/Vector (1).png" alt="Alpine" />Alpine
+          </div>
+          <div class="header__navbar">
             <ul>
-              <div class="form_wrap__header__navbar__logo">
-                <img src="./images/Vector (1).png" alt="Alpine" />Alpine
-              </div>
-              <li>TRAVELLER TYPE</li>
-              <li>COUPLE</li>
-              <li>PROGRAM</li>
-              <li>MOUNTAINING</li>
-              <li>SET LOCATION</li>
+              <li><a href="#"> TRAVELLER TYPE</a> <span></span></li>
+              <li><a href="#"> COUPLE</a><span></span></li>
+              <li><a href="#"> PROGRAM</a><span></span></li>
+              <li><a href="#"> MOUNTAINING</a><span></span></li>
+              <li><a href="#"> SET LOCATION</a><span></span></li>
             </ul>
-          </nav>
+          </div>
         </div>
       </header>
-      <div class="form_wrap__search">
-        <form id="form_wrap__search__form">
-          <input type="search" id="query" name="q" placeholder="" />
+      <div class="form_wrap__content">
+        <form class="content__search">
+          <input type="search" id="search" name="search" placeholder="" />
           <button>
             <img src="./images/bx_bx-search.png" alt="search" />
           </button>
         </form>
-      </div>
-      <div class="form_wrap__heading">
-        <h1>Mountain Climbing trips & tours</h1>
-        <button class="form_wrap__heading__active">
-          <img src="./images/Group 2.png" alt="" />
-        </button>
-        <p>watch videos</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-          voluptatem deleniti nobis dolor ipsam consequatur ullam inventore
-          totam commodi delectus.
-        </p>
-      </div>
-      <div class="form_wrap__button">
-        <button>VIEW PROGRAM</button>
+
+        <div class="content__info">
+          <div class="info__items">
+            <div class="items__left">
+              <div class="items__item">
+                <h1>Mountain Climbing trips & tours</h1>
+                <button>VIEW PROGRAM</button>
+              </div>
+            </div>
+            <div class="items__right">
+              <div class="items__item">
+                <button class="form_wrap__heading__active">
+                  <img src="./images/Group 2.png" alt="" />
+                </button>
+                <p>watch videos</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Illum voluptatem deleniti nobis dolor ipsam consequatur ullam
+                  inventore totam commodi delectus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <footer class="form_wrap__footer">
-        <h2>ABOUT</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <p>READ MORE...</p> </p>
-        <div class="icons">
-          <a href="./images/fontisto_instagram.png"></a>
-          <a href="./images/bytesize_twitter.png"></a>
-          <a href="./images/cib_facebook-f.png"></a>
-          <a href="./images/ci_youtube.png"></a>
-        </div>
+        <h2 class="footer__title">ABOUT</h2>
+        <p class="footer__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <span>READ MORE...</span>
+        </p>
       </footer>
+      <div class="form_wrap__icons">
+        <a href="#"><img src="./images/fontisto_instagram.png" alt="" /></a>
+        <a href="#"><img src="./images/bytesize_twitter.png" alt="" /></a>
+        <a href="#"><img src="./images/cib_facebook-f.png" alt="" /></a>
+        <a href="#"><img src="./images/ci_youtube.png" alt="" /></a>
+      </div>
     </div>
   </body>
 </html>

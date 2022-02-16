@@ -10,21 +10,103 @@ body {
   height: 100vh;
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
-  background: url(./images/pexels-pixabay-417173.jpg) 0 0 no-repeat;
-  background-size: cover;
-  background-color: rgba(57, 179, 250, 0.7);
-  background-blend-mode: multiply;
   color: #fff;
+  background: rgba(57, 179, 250, 0.7) url('./images/pexels-pixabay-417173.jpg')
+    0 0 no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
 }
-.form_wrap {
-  width: 100%;
-  max-width: 800px;
-  margin: 100px auto;
-  padding: 20px;
 
-  &__header {
+.burger {
+  &__button {
+    position: fixed;
     display: flex;
-    flex-direction: row;
-    align-items: space-between;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 50px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+    }
+  }
+}
+
+.header {
+  &__container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 290px 50px 70px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    font-family: 'Lemon', serif;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  &__navbar {
+    padding: 10px 50px;
+    border-radius: 5px;
+    background: rgba(#fff, 0.2);
+
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+
+      &:hover {
+        a {
+          color: rgba(#fff, 0.6);
+        }
+
+        span {
+          transform: rotate(180deg);
+        }
+      }
+
+      span {
+        display: block;
+        width: 22px;
+        min-height: 22px;
+        background: url('./images/dashicons_arrow-down-alt2.png') 0 0 no-repeat;
+        transition: background ease-in 0.6s;
+        cursor: pointer;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    a {
+      margin-right: 5px;
+      color: #fff;
+      text-decoration: none;
+      transition: color ease-in 0.3s;
+      cursor: pointer;
+    }
   }
 }
